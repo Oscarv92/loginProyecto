@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark caja bg-light  ">
+    <img class="log" src="assets/8.png" alt="" width="160" height="160" routerLink="/inicio">
+    <h1 id="marca" routerLink="/inicio">Urban Travel</h1>
+    <h2 id="marca" routerLink="/inicio">{{nombre}}</h2>
+
+    <div class="container-fluid " id="color">
+        <ul class="navbar-nav ms-auto">
+            <a class="btn btn-outline-secondary m-2" routerLink="/login" role="button">Iniciar Sesión</a>
+            <a class="btn btn-outline-secondary m-2" routerLink="/registro" role="button">Regístrate</a>
+            <a class="btn btn-outline-secondary m-2" role="button">Quiénes somos</a>
+        </ul>
+
+        <form class="d-flex">
+            <button class="btn btn-outline-info" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Cerrar Sesión</button>
+        </form>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cerrar Sesión</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h1>¿Realmente desea cerrar sesión?</h1>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-danger" data-bs-dismiss="modal" (click)="cerrarSesion()">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
